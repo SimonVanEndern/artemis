@@ -1,3 +1,5 @@
+package edu.tum.cs.i1.statechart;
+
 import java.util.HashSet;
 import java.util.Set;
 

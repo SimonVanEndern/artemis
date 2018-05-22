@@ -1,3 +1,5 @@
+package edu.tum.cs.i1.statechart;
+
 public class StartNode extends Node {
     private static String shape = "Filled circle";
 
@@ -6,6 +8,6 @@ public class StartNode extends Node {
     }
 
     public String getName() {
-        return "\"Start Node\"";
+        return "\"Start src.edu.tum.cs.i1.statechart.Node\"";
     }
 }

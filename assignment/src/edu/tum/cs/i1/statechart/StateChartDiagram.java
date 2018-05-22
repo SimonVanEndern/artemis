@@ -1,3 +1,5 @@
+package edu.tum.cs.i1.statechart;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,8 +30,8 @@ public class StateChartDiagram {
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
-        output.append("StateChartDiagram \"").append(this.name).append("\"\n");
-        output.append("Starting Node points to ");
+        output.append("src.edu.tum.cs.i1.statechart.StateChartDiagram \"").append(this.name).append("\"\n");
+        output.append("Starting src.edu.tum.cs.i1.statechart.Node points to ");
         transitions.stream()
                 .filter(transition -> transition.getFrom().equals(this.startState))
                 .forEach(transition -> output.append((transition.getTo()).getName()));

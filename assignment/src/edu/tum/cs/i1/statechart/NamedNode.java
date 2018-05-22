@@ -1,3 +1,5 @@
+package edu.tum.cs.i1.statechart;
+
 public class NamedNode extends Node {
     private String name;
 

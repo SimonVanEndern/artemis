@@ -1,3 +1,5 @@
+package edu.tum.cs.i1.statechart;
+
 public class Transition {
     private Node from;
     private Node to;

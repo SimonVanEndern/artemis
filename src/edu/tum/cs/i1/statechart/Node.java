@@ -1,3 +1,5 @@
+package edu.tum.cs.i1.statechart;
+
 public abstract class Node {
     private static String shape = "Some shape";
 

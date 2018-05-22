@@ -1,54 +1,33 @@
 package edu.tum.cs.i1.statechart;
 
-import java.util.HashSet;
-import java.util.Set;
 
+/*
+    * This class should represent a state chart diagram
+    * Thus it will contain nodes and transitions
+    * Like drawing, your State chart diagram should be possible to build up step by step using the methods below
+ */
 public class StateChartDiagram {
-    private String name;
-    private StartNode startState;
-    private FinalNode finalState;
 
-    private Set<Transition> transitions;
+    // TODO class variables
 
     public StateChartDiagram(String name) {
-        this.name = name;
-        this.transitions = new HashSet<>();
+        // TODO: Implement the constructor method
     }
 
     public void setStartState(StartNode s) {
-        this.startState = s;
+        // TODO
     }
 
     public void setFinalState(FinalNode s) {
-        this.finalState = s;
+        // TODO
     }
 
     public void addTransition(Transition t) {
-        transitions.add(t);
+        // TODO
     }
 
     @Override
     public String toString() {
-        StringBuilder output = new StringBuilder();
-        output.append("edu.tum.cs.i1.statechart.StateChartDiagram \"").append(this.name).append("\"\n");
-        output.append("Starting edu.tum.cs.i1.statechart.Node points to ");
-        transitions.stream()
-                .filter(transition -> transition.getFrom().equals(this.startState))
-                .forEach(transition -> output.append((transition.getTo()).getName()));
-
-        output.append("\n");
-        for (Transition t : transitions) {
-            output.append("From ")
-                    .append(t.getFrom().getName())
-                    .append(" you reach ")
-                    .append(t.getTo().getName())
-                    .append(" via ")
-                    .append(t.getDescription())
-                    .append("\n");
-        }
-        output.append("The final state is ")
-                .append(this.finalState.getName());
-
-        return output.toString();
+        // TODO Implement a string representation of the class that matches the test cases
     }
 }

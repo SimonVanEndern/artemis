@@ -8,7 +8,6 @@ public class NamedNode extends Node {
     }
 
     public NamedNode(String name) {
-        super();
-        this.name = name;
+        // TODO
     }
 }
